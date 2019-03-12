@@ -38,6 +38,6 @@ Add to `tslint.json`:
 Add to `jest` field in `package.json` or Jest config:
 ```json
 {
-  "extends": "@jupl/ts"
+  "preset": "@jupl/ts"
 }
 ```
