@@ -27,6 +27,6 @@
     "target": "es2018"
   },
   "exclude": [
-    "dist"
+    "../../../../dist"
   ]
 }
