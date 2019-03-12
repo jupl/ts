@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Immutable rules should be valid 1`] = `
+Object {
+  "errorCount": 2,
+  "failures": Array [
+    Object {
+      "endPosition": Object {
+        "character": 8,
+        "line": 6,
+        "position": 74,
+      },
+      "failure": "Modifying properties of existing object not allowed.",
+      "fix": Array [],
+      "name": "./lint/fixtures/immutable.ts",
+      "ruleName": "no-object-mutation",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 6,
+        "position": 66,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 11,
+        "line": 7,
+        "position": 86,
+      },
+      "failure": "Modifying properties of existing object not allowed.",
+      "fix": Array [],
+      "name": "./lint/fixtures/immutable.ts",
+      "ruleName": "no-object-mutation",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 7,
+        "position": 75,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 15,
+        "line": 2,
+        "position": 45,
+      },
+      "failure": "Documentation must exist for methods.",
+      "fix": undefined,
+      "name": "./lint/fixtures/immutable.ts",
+      "ruleName": "completed-docs",
+      "ruleSeverity": "WARNING",
+      "startPosition": Object {
+        "character": 2,
+        "line": 2,
+        "position": 32,
+      },
+    },
+  ],
+  "fixes": Array [],
+  "format": "prose",
+  "output": "
+WARNING: ./lint/fixtures/immutable.ts:3:3 - Documentation must exist for methods.
+ERROR: ./lint/fixtures/immutable.ts:7:1 - Modifying properties of existing object not allowed.
+ERROR: ./lint/fixtures/immutable.ts:8:1 - Modifying properties of existing object not allowed.
+",
+  "warningCount": 1,
+}
+`;

@@ -1,0 +1,802 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Functionality rules should be valid 1`] = `
+Object {
+  "errorCount": 41,
+  "failures": Array [
+    Object {
+      "cost": undefined,
+      "endPosition": Object {
+        "character": 48,
+        "line": 49,
+        "position": 735,
+      },
+      "failure": "Remove this useless assignment to local variable \\"x\\".",
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-dead-store",
+      "ruleSeverity": "error",
+      "secondaryLocations": Array [],
+      "startPosition": Object {
+        "character": 47,
+        "line": 49,
+        "position": 734,
+      },
+    },
+    Object {
+      "cost": undefined,
+      "endPosition": Object {
+        "character": 14,
+        "line": 77,
+        "position": 1105,
+      },
+      "failure": "This case duplicates the one on line 72",
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-identical-conditions",
+      "ruleSeverity": "error",
+      "secondaryLocations": Array [
+        Object {
+          "endCol": 14,
+          "endLine": 71,
+          "message": "Original",
+          "startCol": 5,
+          "startLine": 71,
+        },
+      ],
+      "startPosition": Object {
+        "character": 5,
+        "line": 77,
+        "position": 1096,
+      },
+    },
+    Object {
+      "cost": undefined,
+      "endPosition": Object {
+        "character": 22,
+        "line": 1,
+        "position": 52,
+      },
+      "failure": "Refactor this redundant 'await' on a non-promise.",
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-invalid-await",
+      "ruleSeverity": "error",
+      "secondaryLocations": Array [],
+      "startPosition": Object {
+        "character": 2,
+        "line": 1,
+        "position": 32,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 21,
+        "line": 19,
+        "position": 244,
+      },
+      "failure": "missing JSDoc @returns for function",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "valid-jsdoc",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 19,
+        "position": 223,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 19,
+        "line": 97,
+        "position": 1342,
+      },
+      "failure": "missing JSDoc @returns for function",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "valid-jsdoc",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 97,
+        "position": 1323,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 5,
+        "line": 35,
+        "position": 475,
+      },
+      "failure": "Calls to 'alert' are not allowed.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "ban",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 35,
+        "position": 470,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 21,
+        "line": 38,
+        "position": 543,
+      },
+      "failure": "if statements must be braced",
+      "fix": Array [
+        Object {
+          "innerLength": 0,
+          "innerStart": 521,
+          "innerText": " {",
+        },
+        Object {
+          "innerLength": 0,
+          "innerStart": 543,
+          "innerText": "
+}",
+        },
+      ],
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "curly",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 37,
+        "position": 480,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 1,
+        "line": 42,
+        "position": 588,
+      },
+      "failure": "for (... in ...) statements must be filtered with an if statement",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "forin",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 40,
+        "position": 545,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 1,
+        "line": 89,
+        "position": 1245,
+      },
+      "failure": "for (... in ...) statements must be filtered with an if statement",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "forin",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 87,
+        "position": 1202,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 7,
+        "line": 45,
+        "position": 612,
+      },
+      "failure": "unexpected label on statement",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "label-position",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 2,
+        "line": 45,
+        "position": 607,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 30,
+        "line": 46,
+        "position": 644,
+      },
+      "failure": "Access to arguments.callee is forbidden",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-arg",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 14,
+        "line": 46,
+        "position": 628,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 23,
+        "line": 47,
+        "position": 669,
+      },
+      "failure": "Forbidden bitwise operation",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-bitwise",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 14,
+        "line": 47,
+        "position": 660,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 19,
+        "line": 47,
+        "position": 665,
+      },
+      "failure": "Forbidden bitwise operation",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-bitwise",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 14,
+        "line": 47,
+        "position": 660,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 55,
+        "line": 49,
+        "position": 742,
+      },
+      "failure": "Assignments in conditional expressions are forbidden",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-conditional-assignment",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 47,
+        "line": 49,
+        "position": 734,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 26,
+        "line": 50,
+        "position": 773,
+      },
+      "failure": "Forbidden constructor, use a literal or simple function call instead",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-construct",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 16,
+        "line": 50,
+        "position": 763,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 12,
+        "line": 51,
+        "position": 790,
+      },
+      "failure": "Use of debugger statements is forbidden",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-debugger",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 4,
+        "line": 51,
+        "position": 782,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 11,
+        "line": 66,
+        "position": 967,
+      },
+      "failure": "Multiple calls to 'super()' found. It must be called only once.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-duplicate-super",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 4,
+        "line": 65,
+        "position": 948,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 44,
+        "line": 83,
+        "position": 1189,
+      },
+      "failure": "block is empty",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-empty",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 42,
+        "line": 83,
+        "position": 1187,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 4,
+        "line": 85,
+        "position": 1195,
+      },
+      "failure": "forbidden eval",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-eval",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 85,
+        "position": 1191,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 1,
+        "line": 89,
+        "position": 1245,
+      },
+      "failure": "for-in loops over arrays are forbidden. Use for-of or array.forEach instead.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-for-in-array",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 87,
+        "position": 1202,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 14,
+        "line": 91,
+        "position": 1261,
+      },
+      "failure": "Module 'acorn' is not listed as dependency in package.json",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-implicit-dependencies",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 7,
+        "line": 91,
+        "position": 1254,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 20,
+        "line": 93,
+        "position": 1283,
+      },
+      "failure": "Interpolation will only work for template strings.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-invalid-template-strings",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 16,
+        "line": 93,
+        "position": 1279,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 16,
+        "line": 94,
+        "position": 1302,
+      },
+      "failure": "the \\"this\\" keyword is disallowed outside of a class body",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-invalid-this",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 12,
+        "line": 94,
+        "position": 1298,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 4,
+        "line": 125,
+        "position": 1754,
+      },
+      "failure": "the \\"this\\" keyword is disallowed outside of a class body",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-invalid-this",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 125,
+        "position": 1750,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 16,
+        "line": 95,
+        "position": 1320,
+      },
+      "failure": "Use 'undefined' instead of 'null'",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-null-keyword",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 12,
+        "line": 95,
+        "position": 1316,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 14,
+        "line": 101,
+        "position": 1416,
+      },
+      "failure": "Unnecessary 'await'.",
+      "fix": Object {
+        "innerLength": 6,
+        "innerStart": 1411,
+        "innerText": "",
+      },
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-return-await",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 9,
+        "line": 101,
+        "position": 1411,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 9,
+        "line": 99,
+        "position": 1380,
+      },
+      "failure": "Shadowed name: 'a'",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-shadowed-variable",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 8,
+        "line": 99,
+        "position": 1379,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 20,
+        "line": 105,
+        "position": 1472,
+      },
+      "failure": "Array has a missing element.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-sparse-arrays",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 19,
+        "line": 105,
+        "position": 1471,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 34,
+        "line": 106,
+        "position": 1516,
+      },
+      "failure": "object access via string literals is disallowed",
+      "fix": Object {
+        "innerLength": 12,
+        "innerStart": 1505,
+        "innerText": ".NODE_ENV",
+      },
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-string-literal",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 24,
+        "line": 106,
+        "position": 1506,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 13,
+        "line": 109,
+        "position": 1577,
+      },
+      "failure": "Throwing plain strings (not instances of Error) gives no stack traces",
+      "fix": Array [
+        Object {
+          "innerLength": 0,
+          "innerStart": 1572,
+          "innerText": "new Error(",
+        },
+        Object {
+          "innerLength": 0,
+          "innerStart": 1577,
+          "innerText": ")",
+        },
+      ],
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-string-throw",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 2,
+        "line": 109,
+        "position": 1566,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 4,
+        "line": 118,
+        "position": 1693,
+      },
+      "failure": "expected a 'break' before 'case'",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-switch-case-fall-through",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 118,
+        "position": 1689,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 22,
+        "line": 1,
+        "position": 52,
+      },
+      "failure": "Expression has type \`void\`. Put it on its own line as a statement.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-void-expression",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 8,
+        "line": 1,
+        "position": 38,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 22,
+        "line": 1,
+        "position": 52,
+      },
+      "failure": "Invalid 'await' of a non-Promise value.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "await-promise",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 2,
+        "line": 1,
+        "position": 32,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 12,
+        "line": 5,
+        "position": 79,
+      },
+      "failure": "Promises must be handled appropriately",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-floating-promises",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 5,
+        "position": 67,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 13,
+        "line": 13,
+        "position": 168,
+      },
+      "failure": "Interfaces cannot be constructed, only classes. Did you mean \`declare class\`?",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-misused-new",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 2,
+        "line": 13,
+        "position": 157,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 27,
+        "line": 17,
+        "position": 221,
+      },
+      "failure": "Type assertion on object literals is forbidden, use a type annotation instead.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-object-literal-type-assertion",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 17,
+        "line": 17,
+        "position": 211,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 20,
+        "line": 21,
+        "position": 287,
+      },
+      "failure": "Avoid referencing unbound methods which may cause unintentional scoping of 'this'.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "no-unbound-method",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 9,
+        "line": 21,
+        "position": 276,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 30,
+        "line": 24,
+        "position": 321,
+      },
+      "failure": "This type is not allowed in the operand for the '!' operator because it could be a string. Allowed types are boolean, null-union, or undefined-union.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "strict-boolean-expressions",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 14,
+        "line": 24,
+        "position": 305,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 35,
+        "line": 27,
+        "position": 408,
+      },
+      "failure": "Expression is always false.",
+      "fix": undefined,
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "strict-type-predicates",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 0,
+        "line": 27,
+        "position": 373,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 8,
+        "line": 33,
+        "position": 465,
+      },
+      "failure": "This is the default value for this type parameter, so it can be omitted.",
+      "fix": Object {
+        "innerLength": 8,
+        "innerStart": 458,
+        "innerText": "",
+      },
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "use-default-type-parameter",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 2,
+        "line": 33,
+        "position": 459,
+      },
+    },
+    Object {
+      "endPosition": Object {
+        "character": 13,
+        "line": 13,
+        "position": 168,
+      },
+      "failure": "Interface has only a call signature — use \`type Test = new() => Test\` instead.",
+      "fix": Object {
+        "innerLength": 32,
+        "innerStart": 138,
+        "innerText": "type Test = new() => Test",
+      },
+      "name": "./lint/fixtures/functionality.ts",
+      "ruleName": "callable-types",
+      "ruleSeverity": "ERROR",
+      "startPosition": Object {
+        "character": 2,
+        "line": 13,
+        "position": 157,
+      },
+    },
+  ],
+  "fixes": Array [],
+  "format": "prose",
+  "output": "
+ERROR: ./lint/fixtures/functionality.ts:2:3 - Refactor this redundant 'await' on a non-promise.
+ERROR: ./lint/fixtures/functionality.ts:2:3 - Invalid 'await' of a non-Promise value.
+ERROR: ./lint/fixtures/functionality.ts:2:9 - Expression has type \`void\`. Put it on its own line as a statement.
+ERROR: ./lint/fixtures/functionality.ts:6:1 - Promises must be handled appropriately
+ERROR: ./lint/fixtures/functionality.ts:14:3 - Interfaces cannot be constructed, only classes. Did you mean \`declare class\`?
+ERROR: ./lint/fixtures/functionality.ts:14:3 - Interface has only a call signature — use \`type Test = new() => Test\` instead.
+ERROR: ./lint/fixtures/functionality.ts:18:18 - Type assertion on object literals is forbidden, use a type annotation instead.
+ERROR: ./lint/fixtures/functionality.ts:20:1 - missing JSDoc @returns for function
+ERROR: ./lint/fixtures/functionality.ts:22:10 - Avoid referencing unbound methods which may cause unintentional scoping of 'this'.
+ERROR: ./lint/fixtures/functionality.ts:25:15 - This type is not allowed in the operand for the '!' operator because it could be a string. Allowed types are boolean, null-union, or undefined-union.
+ERROR: ./lint/fixtures/functionality.ts:28:1 - Expression is always false.
+ERROR: ./lint/fixtures/functionality.ts:34:3 - This is the default value for this type parameter, so it can be omitted.
+ERROR: ./lint/fixtures/functionality.ts:36:1 - Calls to 'alert' are not allowed.
+ERROR: ./lint/fixtures/functionality.ts:38:1 - if statements must be braced
+ERROR: ./lint/fixtures/functionality.ts:41:1 - for (... in ...) statements must be filtered with an if statement
+ERROR: ./lint/fixtures/functionality.ts:46:3 - unexpected label on statement
+ERROR: ./lint/fixtures/functionality.ts:47:15 - Access to arguments.callee is forbidden
+ERROR: ./lint/fixtures/functionality.ts:48:15 - Forbidden bitwise operation
+ERROR: ./lint/fixtures/functionality.ts:48:15 - Forbidden bitwise operation
+ERROR: ./lint/fixtures/functionality.ts:50:48 - Remove this useless assignment to local variable \\"x\\".
+ERROR: ./lint/fixtures/functionality.ts:50:48 - Assignments in conditional expressions are forbidden
+ERROR: ./lint/fixtures/functionality.ts:51:17 - Forbidden constructor, use a literal or simple function call instead
+ERROR: ./lint/fixtures/functionality.ts:52:5 - Use of debugger statements is forbidden
+ERROR: ./lint/fixtures/functionality.ts:66:5 - Multiple calls to 'super()' found. It must be called only once.
+ERROR: ./lint/fixtures/functionality.ts:78:6 - This case duplicates the one on line 72
+ERROR: ./lint/fixtures/functionality.ts:84:43 - block is empty
+ERROR: ./lint/fixtures/functionality.ts:86:1 - forbidden eval
+ERROR: ./lint/fixtures/functionality.ts:88:1 - for (... in ...) statements must be filtered with an if statement
+ERROR: ./lint/fixtures/functionality.ts:88:1 - for-in loops over arrays are forbidden. Use for-of or array.forEach instead.
+ERROR: ./lint/fixtures/functionality.ts:92:8 - Module 'acorn' is not listed as dependency in package.json
+ERROR: ./lint/fixtures/functionality.ts:94:17 - Interpolation will only work for template strings.
+ERROR: ./lint/fixtures/functionality.ts:95:13 - the \\"this\\" keyword is disallowed outside of a class body
+ERROR: ./lint/fixtures/functionality.ts:96:13 - Use 'undefined' instead of 'null'
+ERROR: ./lint/fixtures/functionality.ts:98:1 - missing JSDoc @returns for function
+ERROR: ./lint/fixtures/functionality.ts:100:9 - Shadowed name: 'a'
+ERROR: ./lint/fixtures/functionality.ts:102:10 - Unnecessary 'await'.
+ERROR: ./lint/fixtures/functionality.ts:106:20 - Array has a missing element.
+ERROR: ./lint/fixtures/functionality.ts:107:25 - object access via string literals is disallowed
+ERROR: ./lint/fixtures/functionality.ts:110:3 - Throwing plain strings (not instances of Error) gives no stack traces
+ERROR: ./lint/fixtures/functionality.ts:119:1 - expected a 'break' before 'case'
+ERROR: ./lint/fixtures/functionality.ts:126:1 - the \\"this\\" keyword is disallowed outside of a class body
+",
+  "warningCount": 0,
+}
+`;

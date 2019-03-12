@@ -1,0 +1,12 @@
+{
+  "coverageDirectory": "<rootDir>/.coverage",
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "<rootDir>/config/node.json"
+    }
+  },
+  "moduleNameMapper": {
+    "^~/(.*)": "<rootDir>/src/$1"
+  },
+  "preset": "ts-jest"
+}
