@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": "./src",
+    "baseUrl": "../../../../src",
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
