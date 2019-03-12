@@ -35,7 +35,7 @@ Add to `tslint.json`:
 ```
 
 ### Jest
-Add to `jest` field in `package.json` or Jest config:
+Add to `jest.config.js`, `jest` field in `package.json`, or Jest config:
 ```json
 {
   "preset": "@jupl/ts"

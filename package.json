@@ -1,6 +1,6 @@
 {
   "name": "@jupl/ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Personal collection of TypeScript related configurations",
   "author": "jupl",
   "license": "MIT",
@@ -15,7 +15,7 @@
   "scripts": {
     "lint": "tsc --project .tsconfig.json && npm run lint:file -- '*.{t,j}s' 'lint/**/*.{t,j}s'",
     "lint:file": "tslint --project .tsconfig.json",
-    "test": "jest --config .jestrc.json",
+    "test": "jest",
     "pretest": "npm run lint"
   },
   "dependencies": {
