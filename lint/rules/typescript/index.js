@@ -4,6 +4,7 @@ module.exports = {
   'adjacent-overload-signatures': true,
   'ban-comma-operator': true,
   // nothing to ban so far
+  'ban-ts-ignore': false,
   'ban-types': false,
   'member-access': [true, 'no-public'],
   'no-any': true,

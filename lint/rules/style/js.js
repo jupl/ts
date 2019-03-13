@@ -71,6 +71,7 @@ module.exports = {
     'check-format',
     'allow-leading-underscore',
     'allow-pascal-case',
+    'require-const-for-all-caps',
   ],
   whitespace: [
     true,

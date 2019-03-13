@@ -6,7 +6,7 @@ module.exports = {
   // can vary per project
   'no-inferred-empty-object-type': false,
   'no-misused-new': true,
-  'no-object-literal-type-assertion': true,
+  'no-object-literal-type-assertion': [true, {"allow-arguments": true}],
   'no-unbound-method': true,
   // javascript interop
   'no-unsafe-any': false,
