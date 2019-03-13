@@ -28,6 +28,9 @@
     "tslint-sonarts": "^1.9.0",
     "typescript-tslint-plugin": "^0.3.1"
   },
+  "peerDependencies": {
+    "jest": "^23.6.0"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.14",
     "@types/mz": "0.0.32",
