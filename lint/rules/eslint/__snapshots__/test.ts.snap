@@ -78,7 +78,7 @@ Object {
         "line": 5,
         "position": 89,
       },
-      "failure": "Operands of '+' operation must either be both strings or both numbers",
+      "failure": "Operands of '+' operation must either be both strings or both numbers, but found any + any",
       "fix": undefined,
       "name": "./lint/fixtures/eslint-js.js",
       "ruleName": "restrict-plus-operands",
@@ -115,7 +115,7 @@ ERROR: ./lint/fixtures/eslint-js.js:1:1 - missing JSDoc return type
 ERROR: ./lint/fixtures/eslint-js.js:1:1 - missing JSDoc for parameter 'b'
 ERROR: ./lint/fixtures/eslint-js.js:1:1 - JSDoc description does not satisfy the regex pattern
 WARNING: ./lint/fixtures/eslint-js.js:5:1 - Documentation must exist for exported functions.
-ERROR: ./lint/fixtures/eslint-js.js:6:10 - Operands of '+' operation must either be both strings or both numbers
+ERROR: ./lint/fixtures/eslint-js.js:6:10 - Operands of '+' operation must either be both strings or both numbers, but found any + any
 ",
   "warningCount": 1,
 }

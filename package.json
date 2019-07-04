@@ -1,6 +1,6 @@
 {
   "name": "@jupl/ts",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Personal collection of TypeScript related configurations",
   "author": "jupl",
   "license": "MIT",
@@ -19,28 +19,28 @@
     "pretest": "npm run lint"
   },
   "dependencies": {
-    "babel-plugin-dynamic-import-node": "^2.2.0",
-    "ts-jest": "^23.10.5",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
+    "ts-jest": "^24.0.2",
     "tslint-eslint-rules": "^5.4.0",
-    "tslint-immutable": "^5.3.3",
-    "tslint-react": "^3.6.0",
-    "tslint-react-hooks": "^2.0.0",
+    "tslint-immutable": "^6.0.1",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.1.1",
     "tslint-sonarts": "^1.9.0",
-    "typescript-tslint-plugin": "^0.3.1"
+    "typescript-tslint-plugin": "^0.5.3"
   },
   "peerDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^24.8.0"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.14",
+    "@types/jest": "^24.0.15",
     "@types/mz": "0.0.32",
-    "@types/node": "^11.11.3",
-    "@types/react": "^16.8.8",
-    "jest": "^23.6.0",
-    "jest-cli": "^23.6.0",
+    "@types/node": "^12.0.12",
+    "@types/react": "^16.8.23",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
     "mz": "^2.7.0",
-    "react": "^16.8.4",
-    "tslint": "^5.14.0",
-    "typescript": "^3.3.3333"
+    "react": "^16.8.6",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
   }
 }

@@ -1,9 +1,12 @@
+const preset = require('./jest-preset')
+
 module.exports = {
-  coverageDirectory: '<rootDir>/.coverage',
+  ...preset,
   globals: {
+    ...preset.globals,
     'ts-jest': {
+      ...preset.globals['ts-jest'],
       tsConfig: '<rootDir>/config/node.json',
     },
   },
-  preset: 'ts-jest',
 }
