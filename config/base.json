@@ -17,9 +17,6 @@
     "paths": {
       "~/*": ["*"]
     },
-    "plugins": [
-      {"name": "typescript-tslint-plugin"}
-    ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,

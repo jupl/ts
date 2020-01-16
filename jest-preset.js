@@ -1,3 +1,5 @@
+'use strict'
+
 const preset = require('ts-jest/jest-preset')
 
 module.exports = {

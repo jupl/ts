@@ -1,7 +1,0 @@
-{
-  "extends": "./lint",
-  "jsRules": {
-    "no-object-mutation": false,
-    "no-require-imports": false
-  }
-}

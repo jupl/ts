@@ -8,7 +8,8 @@
 ## About
 Personal configurations for TypeScript projects. Sets up base path to `src/`. Includes:
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
-- [TSLint](https://palantir.github.io/tslint/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [Jest](https://jestjs.io/)
 
 ## Installation
@@ -26,11 +27,17 @@ Add to `tsconfig.json`:
 }
 ```
 
-### TSLint
-Add to `tslint.json`:
+### Prettier
+Add to `.prettierrc.json`:
+```json
+"@jupl/ts/format"
+```
+
+### ESLint
+Add to `eslint.json`:
 ```json
 {
-  "extends": "@jupl/ts"
+  "extends": "@jupl/ts/lint"
 }
 ```
 

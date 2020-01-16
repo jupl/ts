@@ -1,36 +1,57 @@
 'use strict'
 
+const path = require('path')
+
 const rules = [
-  require('./rules/bug'),
-  require('./rules/code-smell'),
-  require('./rules/eslint'),
-  require('./rules/immutable'),
-  require('./rules/typescript'),
-  require('./rules/functionality'),
-  require('./rules/maintainability'),
-  require('./rules/style'),
-  require('./rules/react'),
-]
-const jsRules = [
-  require('./rules/bug/js'),
-  require('./rules/code-smell/js'),
-  require('./rules/eslint/js'),
-  require('./rules/immutable/js'),
-  require('./rules/typescript/js'),
-  require('./rules/functionality/js'),
-  require('./rules/maintainability/js'),
-  require('./rules/style/js'),
-  require('./rules/react/js'),
-]
+  './rules/best-practices',
+  './rules/errors',
+  './rules/es6',
+  './rules/functional',
+  './rules/jsdoc',
+  './rules/node',
+  './rules/react',
+  './rules/style',
+  './rules/typescript',
+  './rules/variables',
+].map(require)
 
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+  },
   extends: [
-    'tslint-eslint-rules',
-    'tslint-immutable',
-    'tslint-react',
-    'tslint-react-hooks',
-    'tslint-sonarts',
+    'eslint:recommended',
+    'plugin:jsdoc/recommended',
+    'plugin:react/recommended',
+    'plugin:sonarjs/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:prettier/recommended',
+    'prettier/@typescript-eslint',
+    'prettier/react',
   ],
-  jsRules: Object.assign({}, ...jsRules),
-  rules: Object.assign({}, ...jsRules, ...rules),
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      rules: rules.reduce((r, {jsRules}) => ({...r, ...jsRules}), {}),
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: rules.reduce((r, {tsRules}) => ({...r, ...tsRules}), {}),
+    },
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2020,
+    project: [path.resolve('tsconfig.json')],
+    tsconfigRootDir: path.resolve(),
+  },
+  plugins: ['functional', 'react-hooks'],
+  rules: rules.reduce((r, {allRules}) => ({...r, ...allRules}), {}),
+  settings: {
+    jsdoc: {tagNamePreference: {returns: 'return'}},
+    react: {version: 'detect'},
+  },
 }
