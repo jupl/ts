@@ -11,6 +11,7 @@ module.exports = {
       'error',
       {contexts: ['ExportDefaultDeclaration', 'ExportNamedDeclaration']},
     ],
+    'jsdoc/require-returns-type': 'off',
   },
   tsRules: {
     'jsdoc/no-types': 'error',
