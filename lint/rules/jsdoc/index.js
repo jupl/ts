@@ -6,7 +6,6 @@ module.exports = {
     'jsdoc/match-description': ['error', {contexts: ['any']}],
     'jsdoc/newline-after-description': ['error', 'never'],
     'jsdoc/require-description': ['error', {contexts: ['any']}],
-    'jsdoc/require-description-complete-sentence': 'error',
     'jsdoc/require-hyphen-before-param-description': ['error', 'never'],
     'jsdoc/require-jsdoc': [
       'error',

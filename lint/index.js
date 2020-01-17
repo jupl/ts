@@ -10,6 +10,7 @@ const rules = [
   './rules/jsdoc',
   './rules/node',
   './rules/react',
+  './rules/sonar',
   './rules/style',
   './rules/typescript',
   './rules/variables',

@@ -11,7 +11,7 @@ module.exports = {
     'no-caller': 'error',
     'no-constructor-return': 'error',
     'no-div-regex': 'error',
-    'no-else-return': ['error', {allowElseIf: false}],
+    'no-else-return': ['error', {allowElseIf: true}],
     'no-eval': 'error',
     'no-implicit-coercion': 'error',
     'no-labels': 'error',

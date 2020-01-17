@@ -3,21 +3,33 @@
 module.exports = {
   allRules: {
     '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/member-ordering': 'error',
     '@typescript-eslint/naming-convention': [
       'error',
-      {format: ['strictCamelCase', 'UPPER_CASE'], selector: 'variableLike'},
-      {format: ['strictCamelCase'], selector: 'memberLike'},
+      {
+        format: ['strictCamelCase', 'StrictPascalCase', 'UPPER_CASE'],
+        leadingUnderscore: 'allow',
+        selector: 'variableLike',
+      },
       {format: ['StrictPascalCase'], selector: 'typeLike'},
     ],
     '@typescript-eslint/no-dynamic-delete': 'error',
+    '@typescript-eslint/no-empty-interface': [
+      'error',
+      {allowSingleExtends: true},
+    ],
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      {checksVoidReturn: false},
+    ],
     '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
