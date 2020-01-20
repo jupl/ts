@@ -11,11 +11,11 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'error',
       {
-        format: ['strictCamelCase', 'StrictPascalCase', 'UPPER_CASE'],
+        format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
         leadingUnderscore: 'allow',
         selector: 'variableLike',
       },
-      {format: ['StrictPascalCase'], selector: 'typeLike'},
+      {format: ['PascalCase'], selector: 'typeLike'},
     ],
     '@typescript-eslint/no-dynamic-delete': 'error',
     '@typescript-eslint/no-empty-interface': [
@@ -38,7 +38,7 @@ module.exports = {
       'error',
       {allowTaggedTemplates: true},
     ],
-    '@typescript-eslint/no-unused-vars-experimental': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', {varsIgnorePattern: '^_'}],
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/prefer-for-of': 'error',
