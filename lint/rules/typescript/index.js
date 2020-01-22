@@ -38,7 +38,13 @@ module.exports = {
       'error',
       {allowTaggedTemplates: true},
     ],
-    '@typescript-eslint/no-unused-vars': ['error', {varsIgnorePattern: '^_'}],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+      },
+    ],
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/prefer-for-of': 'error',
