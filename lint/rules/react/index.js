@@ -11,7 +11,6 @@ module.exports = {
     'react/jsx-fragments': 'error',
     'react/jsx-no-bind': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    'react/jsx-one-expression-per-line': ['error', {allow: 'single-child'}],
     'react/jsx-pascal-case': 'error',
     'react/jsx-sort-props': [
       'error',
