@@ -7,6 +7,7 @@ const rules = [
   './rules/errors',
   './rules/es6',
   './rules/functional',
+  './rules/import',
   './rules/jsdoc',
   './rules/node',
   './rules/react',
@@ -23,6 +24,8 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:import/react',
+    'plugin:import/typescript',
     'plugin:jsdoc/recommended',
     'plugin:react/recommended',
     'plugin:sonarjs/recommended',
@@ -46,10 +49,11 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
-    project: [path.resolve('tsconfig.json')],
+    project: path.resolve('tsconfig.json'),
+    sourceType: 'module',
     tsconfigRootDir: path.resolve(),
   },
-  plugins: ['functional', 'react-hooks'],
+  plugins: ['functional', 'import', 'react-hooks'],
   rules: rules.reduce((r, {allRules}) => ({...r, ...allRules}), {}),
   settings: {
     jsdoc: {tagNamePreference: {returns: 'return'}},
