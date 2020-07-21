@@ -5,7 +5,6 @@ const preset = require('ts-jest/jest-preset')
 
 module.exports = {
   ...preset,
-  coverageDirectory: '<rootDir>/.coverage',
   globals: {
     'ts-jest': {
       babelConfig: {
