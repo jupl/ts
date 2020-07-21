@@ -34,6 +34,8 @@ module.exports = {
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
+    '@typescript-eslint/no-unsafe-call': 'off',
+    '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unused-expressions': [
       'error',
       {allowTaggedTemplates: true},
@@ -68,9 +70,13 @@ module.exports = {
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/strict-boolean-expressions': [
       'error',
-      {allowNullable: true, allowSafe: true},
+      {allowAny: true, allowNumber: false, allowString: false},
     ],
     '@typescript-eslint/unified-signatures': 'error',
+  },
+  jsRules: {
+    '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-return': 'off',
   },
   tsRules: {
     '@typescript-eslint/explicit-member-accessibility': [

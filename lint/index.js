@@ -49,11 +49,12 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
-    project: path.resolve('tsconfig.json'),
+    project: [path.resolve('tsconfig.json')],
     sourceType: 'module',
     tsconfigRootDir: path.resolve(),
   },
   plugins: ['functional', 'import', 'react-hooks'],
+  root: true,
   rules: rules.reduce((r, {allRules}) => ({...r, ...allRules}), {}),
   settings: {
     jsdoc: {tagNamePreference: {returns: 'return'}},

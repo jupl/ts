@@ -13,7 +13,22 @@ module.exports = {
     'import/no-useless-path-segments': 'error',
     'import/order': [
       'error',
-      {pathGroups: [{group: 'external', pattern: '~/**'}]},
+      {
+        alphabetize: {order: 'asc'},
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        pathGroups: [
+          {group: 'internal', pattern: '_/**'},
+          {group: 'internal', pattern: '-/**'},
+          {group: 'internal', pattern: '~/**'},
+        ],
+      },
     ],
   },
   jsRules: {
