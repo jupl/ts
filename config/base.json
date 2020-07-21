@@ -15,7 +15,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
-      "~/*": ["*"]
+      "~/*": ["*"],
+      "-/*": ["*"],
+      "_/*": ["*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
@@ -23,7 +25,5 @@
     "strict": true,
     "target": "es2018"
   },
-  "exclude": [
-    "../../../../dist"
-  ]
+  "exclude": ["../../../../dist"]
 }
