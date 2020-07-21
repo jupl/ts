@@ -1,6 +1,11 @@
 'use strict'
 
+const path = require('path')
 const preset = require('ts-jest/jest-preset')
+const {pathsToModuleNameMapper} = require('ts-jest/utils')
+const {
+  compilerOptions: {paths},
+} = require('./config/base')
 
 module.exports = {
   ...preset,
@@ -10,10 +15,8 @@ module.exports = {
       babelConfig: {
         plugins: ['dynamic-import-node'],
       },
-      tsConfig: '<rootDir>/node_modules/@jupl/ts/config/node.json',
+      tsConfig: path.join(__dirname, './config/node.json'),
     },
   },
-  moduleNameMapper: {
-    '^~/(.*)': '<rootDir>/src/$1',
-  },
+  moduleNameMapper: pathsToModuleNameMapper(paths),
 }
