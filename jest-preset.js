@@ -22,4 +22,5 @@ module.exports = {
       tsConfig: path.join(__dirname, './config/node.json'),
     },
   },
+  testEnvironment: 'node',
 }
