@@ -41,7 +41,7 @@ Add to `tsconfig.json`:
 
 ### Prettier
 
-Add to `.prettierrc.json`:
+Add to `.prettierrc`:
 
 ```json
 "@jupl/ts/format"
@@ -49,11 +49,11 @@ Add to `.prettierrc.json`:
 
 ### ESLint
 
-Add to `eslint.json`:
+Add to `.eslintrc`:
 
 ```json
 {
-  "extends": "@jupl/ts"
+  "extends": "@jupl/ts/lint"
 }
 ```
 
