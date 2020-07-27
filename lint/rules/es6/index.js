@@ -16,6 +16,7 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
+    'sort-imports': ['error', {ignoreDeclarations: true}],
     'symbol-description': 'error',
   },
 }
