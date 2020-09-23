@@ -19,6 +19,7 @@ Personal configurations for TypeScript projects. Sets up base path to `src/`. In
 
 ```
 npm install @jupl/ts
+yarn add @jupl/ts
 ```
 
 ## Usage
@@ -41,31 +42,61 @@ Add to `tsconfig.json`:
 
 ### Prettier
 
-Add to `.prettierrc`:
+Install dependencies:
 
-```json
-"@jupl/ts/format"
+- `prettier`
+
+Add to `.prettierrc.js`:
+
+```js
+module.exports = require('@jupl/ts/format')
 ```
 
 ### ESLint
 
-Add to `.eslintrc`:
+Install dependencies:
 
-```json
-{
-  "extends": "@jupl/ts/lint"
+- `@typescript-eslint/eslint-plugin`
+- `@typescript-eslint/parser`
+- `eslint`
+- `eslint-config-prettier`
+- `eslint-import-resolver-node` (Yarn PnP)
+- `eslint-plugin-functional`
+- `eslint-plugin-import`
+- `eslint-plugin-jsdoc`
+- `eslint-plugin-prettier`
+- `eslint-plugin-react`
+- `eslint-plugin-react-hooks`
+- `eslint-plugin-sonarjs`
+
+Add to `.eslintrc.js`:
+
+```js
+module.exports = {
+  ...require('@jupl/ts/lint'),
+  // Additional options
 }
 ```
 
 ### Jest
 
-Add to `jest.config.js`, `jest` field in `package.json`, or Jest config:
+Install dependencies:
 
-```json
-{
-  "moduleNameMapper": {
-    "^~/(.*)": "<rootDir>/src/$1"
-  },
-  "preset": "@jupl/ts"
+- `babel-plugin-dynamic-import-node`
+- `babel-jest` (Yarn PnP)
+- `jest`
+- `ts-jest`
+
+Add to `jest.config.js`:
+
+```js
+const {pathsToModuleNameMapper} = require('ts-jest/utils')
+const {compilerOptions} = require('./tsconfig')
+
+module.exports = {
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/',
+  }),
+  preset: '@jupl/ts',
 }
 ```
