@@ -54,7 +54,7 @@ module.exports = require('@jupl/ts/format')
 
 ### ESLint
 
-Install dependencies:
+Install any of the following dependencies based on your use case:
 
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`
