@@ -2,9 +2,9 @@ import type {Options} from 'prettier'
 
 const options: Options = {
   arrowParens: 'avoid',
+  bracketSameLine: false,
   bracketSpacing: false,
   endOfLine: 'lf',
-  jsxBracketSameLine: false,
   printWidth: 79,
   quoteProps: 'as-needed',
   semi: false,

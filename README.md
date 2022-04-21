@@ -64,7 +64,7 @@ Install any of the following dependencies based on your use case:
 - `eslint-plugin-functional`
 - `eslint-plugin-import`
 - `eslint-plugin-jsdoc`
-- `eslint-plugin-prettier`
+- `eslint-plugin-prettier` (and `prettier`)
 - `eslint-plugin-react`
 - `eslint-plugin-react-hooks`
 - `eslint-plugin-sonarjs`

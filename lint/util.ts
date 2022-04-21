@@ -2,7 +2,7 @@ import {canRequire} from '../util'
 import type {Configuration} from './types'
 
 /**
- * Provide valid configuration assuming packages are avialable.
+ * Provide valid configuration assuming packages are available.
  * @param path Package path(s) to check for
  * @param configuration Configuration if packages are available
  * @return Configuration if packages are available, or otherwise empty
@@ -16,7 +16,7 @@ export const moduleConfiguration = (
 }
 
 /**
- * Merge comfogiratuions, overwriting or appending where applicable.
+ * Merge configurations, overwriting or appending where applicable.
  * @param configurations List of configurations to combine
  * @return Merged configuration
  */
