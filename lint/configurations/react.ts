@@ -4,7 +4,7 @@ import {mergeConfigurations, moduleConfiguration} from '../util'
  * React related configuration.
  */
 export const configuration = mergeConfigurations([
-  moduleConfiguration('eslint-plugin-react', {
+  moduleConfiguration(['eslint-plugin-react', 'react'], {
     extends: ['plugin:react/recommended', 'plugin:react/jsx-runtime'],
     rules: {
       'react/button-has-type': 'error',
@@ -34,7 +34,7 @@ export const configuration = mergeConfigurations([
       react: {version: 'detect'},
     },
   }),
-  moduleConfiguration('eslint-plugin-react-hooks', {
+  moduleConfiguration(['eslint-plugin-react-hooks', 'react'], {
     plugins: ['react-hooks'],
     rules: {
       'react-hooks/exhaustive-deps': 'warn',

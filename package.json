@@ -1,6 +1,6 @@
 {
   "name": "@jupl/ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Personal collection of TypeScript related configurations",
   "author": "jupl",
   "license": "MIT",
@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "build": "rollup --config rollup.config.ts --configPlugin typescript",
-    "lint": "tsc && prettier --check . '!**/*.[jt]s?(x)' && eslint .",
+    "lint": "tsc && prettier --check --loglevel warn . '!**/*.[jt]s?(x)' && eslint .",
     "lint:fix": "prettier --write . '!**/*.[jt]s?(x)' && eslint --fix .",
     "pub": "yarn run lint && yarn run build && yarn npm publish --access public",
     "test": "jest"
@@ -30,7 +30,6 @@
   "optionalDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
-    "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-functional": "^4.2.1",

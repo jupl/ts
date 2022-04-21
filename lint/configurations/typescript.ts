@@ -5,14 +5,14 @@ import {mergeConfigurations, moduleConfiguration} from '../util'
  * TypeScript related configuration.
  */
 export const configuration = mergeConfigurations([
-  moduleConfiguration('@typescript-eslint/parser', {
+  moduleConfiguration(['@typescript-eslint/parser', 'typescript'], {
     parser: '@typescript-eslint/parser',
     parserOptions: {
       ecmaVersion: 2021,
       project: [resolve('tsconfig.json')],
     },
   }),
-  moduleConfiguration('@typescript-eslint/eslint-plugin', {
+  moduleConfiguration(['@typescript-eslint/eslint-plugin', 'typescript'], {
     extends: [
       'plugin:@typescript-eslint/eslint-recommended',
       'plugin:@typescript-eslint/recommended',
