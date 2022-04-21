@@ -1,6 +1,6 @@
 {
   "name": "@jupl/ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal collection of TypeScript related configurations",
   "author": "jupl",
   "license": "MIT",
@@ -14,6 +14,7 @@
   },
   "files": [
     "/config",
+    "/tsconfig.json",
     "/format/index.js",
     "/lint/index.js",
     "/test/index.js",
