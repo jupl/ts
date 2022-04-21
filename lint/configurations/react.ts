@@ -5,7 +5,7 @@ import {mergeConfigurations, moduleConfiguration} from '../util'
  */
 export const configuration = mergeConfigurations([
   moduleConfiguration('eslint-plugin-react', {
-    extends: ['plugin:react/recommended'],
+    extends: ['plugin:react/recommended', 'plugin:react/jsx-runtime'],
     rules: {
       'react/button-has-type': 'error',
       'react/forbid-dom-props': ['error', {forbid: ['style']}],
