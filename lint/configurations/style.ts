@@ -12,7 +12,6 @@ export const configuration: Configuration = {
     ],
     'consistent-this': ['error', 'self'],
     'func-style': ['error', 'declaration', {allowArrowFunctions: true}],
-    'max-len': ['error', 79],
     'max-lines': ['error', 500],
     'max-lines-per-function': ['error', 300],
     'no-array-constructor': 'error',
