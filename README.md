@@ -8,7 +8,8 @@
 
 ## About
 
-Personal configurations for TypeScript projects. Sets up base path to `src/`. Includes:
+Personal configurations for TypeScript projects. Sets up base path to `src/`.
+Includes:
 
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 - [ESLint](https://eslint.org/)

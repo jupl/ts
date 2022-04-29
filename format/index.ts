@@ -6,6 +6,7 @@ const options: Options = {
   bracketSpacing: false,
   endOfLine: 'lf',
   printWidth: 79,
+  proseWrap: 'always',
   quoteProps: 'as-needed',
   semi: false,
   singleQuote: true,
