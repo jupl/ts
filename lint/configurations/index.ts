@@ -5,6 +5,7 @@ import {configuration as esnext} from './esnext'
 import {configuration as functional} from './functional'
 import {configuration as imprt} from './import'
 import {configuration as jsdoc} from './jsdoc'
+import {configuration as next} from './next'
 import {configuration as node} from './node'
 import {configuration as prettier} from './prettier'
 import {configuration as react} from './react'
@@ -23,6 +24,7 @@ export const configuration = mergeConfigurations([
   functional,
   imprt,
   jsdoc,
+  next,
   node,
   react,
   sonar,
