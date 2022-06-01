@@ -58,6 +58,7 @@ module.exports = require('@jupl/ts/format')
 Install any of the following dependencies based on your use case:
 
 - `@next/eslint-plugin-next` (Next.js)
+- `@remix-run/eslint-config` (Remix)
 - `@typescript-eslint/eslint-plugin`
 - `@typescript-eslint/parser`
 - `eslint`

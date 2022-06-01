@@ -9,6 +9,7 @@ import {configuration as next} from './next'
 import {configuration as node} from './node'
 import {configuration as prettier} from './prettier'
 import {configuration as react} from './react'
+import {configuration as remix} from './remix'
 import {configuration as sonar} from './sonar'
 import {configuration as style} from './style'
 import {configuration as typescript} from './typescript'
@@ -27,6 +28,7 @@ export const configuration = mergeConfigurations([
   next,
   node,
   react,
+  remix,
   sonar,
   style,
   typescript,
