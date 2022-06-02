@@ -27,6 +27,7 @@ export const configuration = mergeConfigurations([
       '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/camelcase': 'off',
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+      '@typescript-eslint/consistent-type-imports': 'off',
       '@typescript-eslint/default-param-last': 'error',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',

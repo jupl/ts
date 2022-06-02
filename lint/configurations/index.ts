@@ -19,16 +19,16 @@ import {configuration as variables} from './variables'
  * Combined configuration rules.
  */
 export const configuration = mergeConfigurations([
+  next,
+  remix,
   bestPractices,
   errors,
   esnext,
   functional,
   imprt,
   jsdoc,
-  next,
   node,
   react,
-  remix,
   sonar,
   style,
   typescript,
