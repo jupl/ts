@@ -54,7 +54,7 @@ export const configuration = mergeConfigurations([
         'error',
         {checksVoidReturn: false},
       ],
-      '@typescript-eslint/no-parameter-properties': 'error',
+      '@typescript-eslint/no-parameter-properties': 'off',
       '@typescript-eslint/no-throw-literal': 'error',
       '@typescript-eslint/no-unnecessary-condition': 'error',
       '@typescript-eslint/no-unnecessary-type-arguments': 'error',
@@ -106,6 +106,8 @@ export const configuration = mergeConfigurations([
       ],
       '@typescript-eslint/no-require-imports': 'error',
       '@typescript-eslint/no-var-requires': 'error',
+      // Turn off to avoid conflict with @typescript-eslint
+      'no-useless-constructor': 'off',
     },
   }),
 ])

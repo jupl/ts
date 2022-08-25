@@ -1,6 +1,9 @@
 import type {Linter} from 'eslint'
 import {configuration as config} from './configurations'
 
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 const configuration: Linter.Config = {
   env: {browser: true, node: true},
   extends: ['eslint:recommended', ...(config.extends ?? [])],

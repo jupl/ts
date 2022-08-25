@@ -1,5 +1,8 @@
 import type {Options} from 'prettier'
 
+/**
+ * @type {import('prettier').Options}
+ */
 const options: Options = {
   arrowParens: 'avoid',
   bracketSameLine: false,
@@ -17,6 +20,7 @@ const options: Options = {
 
 /**
  * Finalized Prettier options.
+ * @type {import('prettier').Options}
  */
 // eslint-disable-next-line import/no-default-export
 export default options

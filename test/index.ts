@@ -7,6 +7,9 @@ const babelConfig = canRequire('babel-plugin-dynamic-import-node')
   ? {plugins: ['dynamic-import-node']}
   : false
 
+/**
+ * @type {import('@jest/types').Config.InitialOptions}
+ */
 const configuration: Config.InitialOptions = {
   ...defaults,
   coverageThreshold: {
