@@ -1,9 +1,6 @@
 import type {Linter} from 'eslint'
 import {configuration as config} from './configurations'
 
-/**
- * @type {import('eslint').Linter.Config}
- */
 const configuration: Linter.Config = {
   env: {browser: true, node: true},
   extends: ['eslint:recommended', ...(config.extends ?? [])],
@@ -21,6 +18,7 @@ const configuration: Linter.Config = {
 
 /**
  * Finalized ESLint configuration.
+ * @type {import('eslint').Linter.Config}
  */
 // eslint-disable-next-line import/no-default-export
 export default configuration

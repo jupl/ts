@@ -7,9 +7,6 @@ const babelConfig = canRequire('babel-plugin-dynamic-import-node')
   ? {plugins: ['dynamic-import-node']}
   : false
 
-/**
- * @type {import('@jest/types').Config.InitialOptions}
- */
 const configuration: Config.InitialOptions = {
   ...defaults,
   coverageThreshold: {
@@ -32,6 +29,7 @@ const configuration: Config.InitialOptions = {
 
 /**
  * Jest configuration.
+ * @type {import('@jest/types').Config.InitialOptions}
  */
 // eslint-disable-next-line import/no-default-export
 export default configuration

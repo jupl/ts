@@ -1,8 +1,5 @@
 import type {Options} from 'prettier'
 
-/**
- * @type {import('prettier').Options}
- */
 const options: Options = {
   arrowParens: 'avoid',
   bracketSameLine: false,
