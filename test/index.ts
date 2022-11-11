@@ -17,14 +17,17 @@ const configuration: Config.InitialOptions = {
       statements: 100,
     },
   },
-  globals: {
-    'ts-jest': {
-      babelConfig,
-      isolatedModules: true,
-      tsconfig: join(__dirname, '../config/node.json'),
-    },
-  },
   testEnvironment: 'node',
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        babelConfig,
+        isolatedModules: true,
+        tsconfig: join(__dirname, '../config/node.json'),
+      },
+    ],
+  },
 }
 
 /**

@@ -76,10 +76,7 @@ export const configuration = mergeConfigurations([
       '@typescript-eslint/no-var-requires': 'off',
       '@typescript-eslint/prefer-for-of': 'error',
       '@typescript-eslint/prefer-function-type': 'error',
-      '@typescript-eslint/prefer-nullish-coalescing': [
-        'error',
-        {forceSuggestionFixer: true},
-      ],
+      '@typescript-eslint/prefer-nullish-coalescing': 'error',
       '@typescript-eslint/prefer-optional-chain': 'error',
       '@typescript-eslint/prefer-readonly': 'error',
       '@typescript-eslint/promise-function-async': 'error',
