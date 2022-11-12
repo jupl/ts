@@ -55,6 +55,7 @@ export const configuration = mergeConfigurations([
         {checksVoidReturn: false},
       ],
       '@typescript-eslint/no-parameter-properties': 'off',
+      '@typescript-eslint/no-shadow': 'off',
       '@typescript-eslint/no-throw-literal': 'error',
       '@typescript-eslint/no-unnecessary-condition': 'error',
       '@typescript-eslint/no-unnecessary-type-arguments': 'error',

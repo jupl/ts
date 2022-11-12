@@ -24,7 +24,6 @@ export const configuration: Configuration = {
       'afterEach',
       'afterAll',
     ],
-    'no-shadow': 'error',
     'no-undef-init': 'error',
   },
 }
