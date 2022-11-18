@@ -22,6 +22,7 @@ export const configuration: Configuration = {
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
     'no-plusplus': ['error', {allowForLoopAfterthoughts: true}],
+    'no-restricted-syntax': ['error', 'FunctionDeclaration[generator=false]'],
     'one-var': ['error', 'never'],
     'operator-assignment': ['error', 'always'],
     'prefer-exponentiation-operator': 'error',
