@@ -9,7 +9,6 @@ const babelConfig = canRequire('babel-plugin-dynamic-import-node')
 
 const configuration: Config.InitialOptions = {
   ...defaults,
-  clearMocks: true,
   coverageThreshold: {
     global: {
       branches: 100,
@@ -18,6 +17,8 @@ const configuration: Config.InitialOptions = {
       statements: 100,
     },
   },
+  resetMocks: true,
+  restoreMocks: true,
   testEnvironment: 'node',
   transform: {
     '^.+\\.tsx?$': [
