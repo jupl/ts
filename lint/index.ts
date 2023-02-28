@@ -7,6 +7,7 @@ const configuration: Linter.Config = {
   overrides: [
     {files: ['*.js', '*.jsx'], rules: config.jsRules},
     {files: ['*.ts', '*.tsx'], rules: config.tsRules},
+    {files: ['*.css.ts'], rules: config.vanillaRules},
   ],
   parser: config.parser,
   parserOptions: {sourceType: 'module', ...config.parserOptions},

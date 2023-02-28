@@ -24,4 +24,7 @@ export const configuration = moduleConfiguration('eslint-plugin-jsdoc', {
     'jsdoc/no-types': 'error',
     'jsdoc/require-param-type': 'off',
   },
+  vanillaRules: {
+    'jsdoc/require-jsdoc': 'off',
+  },
 })

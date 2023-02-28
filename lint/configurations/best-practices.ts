@@ -17,6 +17,7 @@ export const configuration: Configuration = {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'default-case': 'error',
+    eqeqeq: ['error', 'smart'],
     'grouped-accessor-pairs': 'error',
     'max-classes-per-file': ['error', 1],
     'no-alert': 'error',

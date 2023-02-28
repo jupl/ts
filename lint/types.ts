@@ -7,4 +7,5 @@ export interface Configuration extends Pick<Linter.BaseConfig, BaseKeys> {
   extends?: string[]
   jsRules?: Record<string, Linter.RuleEntry>
   tsRules?: Record<string, Linter.RuleEntry>
+  vanillaRules?: Record<string, Linter.RuleEntry>
 }

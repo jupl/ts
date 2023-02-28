@@ -33,6 +33,7 @@ export const mergeConfigurations = (configurations: Configuration[]) =>
         rules,
         settings,
         tsRules,
+        vanillaRules,
       },
     ) => ({
       extends: [...(configuration.extends ?? []), ...(xtends ?? [])],
@@ -43,6 +44,7 @@ export const mergeConfigurations = (configurations: Configuration[]) =>
       rules: {...configuration.rules, ...rules},
       settings: {...configuration.settings, ...settings},
       tsRules: {...configuration.tsRules, ...tsRules},
+      vanillaRules: {...configuration.vanillaRules, ...vanillaRules},
     }),
     {},
   )
