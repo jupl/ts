@@ -14,6 +14,7 @@ export const configuration = moduleConfiguration('eslint-plugin-functional', {
           'this',
           'exports.*',
           'process.**',
+          '*Ref.current',
         ],
         ignoreImmediateMutation: true,
       },
