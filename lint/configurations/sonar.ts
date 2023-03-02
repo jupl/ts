@@ -6,6 +6,7 @@ import {moduleConfiguration} from '../util'
 export const configuration = moduleConfiguration('eslint-plugin-sonarjs', {
   extends: ['plugin:sonarjs/recommended'],
   rules: {
+    'sonarjs/no-duplicate-string': ['error', 10],
     'sonarjs/prefer-while': 'off',
   },
 })
